@@ -1,5 +1,3 @@
-// const redisClient = require('../services/redisClient');
-// const { sendAlertEmail } = require('../services/emailService');
 const FailedRequest = require("../models/FailedRequest");
 const { trackFailure } = require("../services/trackerService");
 const sendAlertEmail = require("../services/emailServices");
@@ -37,6 +35,6 @@ const submitControllerRequest = async (req, res) => {
       return res.status(500).json({ error: "Internal Server Error" });
     }
   }
-  res.status(201).json({ msg: "headers or token is fine" });
+  res.status(201).json({ msg: "Request done successfully" });
 };
 module.exports = submitControllerRequest;
