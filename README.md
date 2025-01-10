@@ -40,4 +40,6 @@ This backend system monitors a specific POST endpoint (`/api/submit`) for failed
 1. POST /api/submit
    Description: Monitors POST requests and logs failures due to invalid headers or tokens.
 
-   ![logs and failures of the post request providing incorrect token](/images/1.png)
+   ![logs and failures of the post request providing incorrect token][defgggggggggggggggg]
+
+[defgggggggggggggggg]: /images/1.png
