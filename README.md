@@ -37,9 +37,15 @@ This backend system monitors a specific POST endpoint (`/api/submit`) for failed
 
 ## API Endpoints
 
-1. POST /api/submit
+1. GET /api/metrics
+   Description: Fetch real-time metrics on failed requests and system logs.
+
+   ![Fetch real-time metrics on failed requests and system logs.](/images/1.png)
+
+2. POST /api/submit
    Description: Monitors POST requests and logs failures due to invalid headers or tokens.
+   ![logs and failures of the post request providing incorrect token](/images/3.png)
 
-   ![logs and failures of the post request providing incorrect token][defgggggggggggggggg]
-
-[defgggggggggggggggg]: /images/1.png
+3. POST /api/submit
+   Description: Monitors POST requests due to valid tokens.
+   ![Monitors POST requests due to valid tokens.](/images/2.png)
