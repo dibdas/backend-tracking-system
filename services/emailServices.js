@@ -8,7 +8,6 @@ const sendEmailAlert = async (clientIp) => {
     text: `This Ip ${clientIp} has exceedded the fauiledrequest threshold`,
   };
   try {
-    console.log("mailoptions", mailOptions);
     const info = await transporter.sendMail(mailOptions);
     console.log("email sent:", info);
   } catch (err) {

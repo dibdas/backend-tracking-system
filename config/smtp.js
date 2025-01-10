@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 
-const TOKEN = "b13d2192742f5cee34b5efd20e61b631";
-console.log("..............ttttttttt.", process.env.USER);
+const TOKEN = process.env.TOKEN;
+
 const emailTransporter = nodemailer.createTransport({
   host: "sandbox.smtp.mailtrap.io",
   token: TOKEN,

@@ -55,3 +55,26 @@ This backend system monitors a specific POST endpoint (`/api/submit`) for failed
 ![](/images/4.png)
 ![](/images//5.png)
 ![](/images//6.png)
+![](/images/7.png)
+![](/images/8.png)
+
+## Example Use Case
+
+Send POST Requests:
+Send valid and invalid POST requests to /api/submit. Invalid requests will be tracked.
+
+# Monitor Metrics:
+
+Fetch metrics via /api/metrics to view failed attempts and logs.
+
+# Receive Alerts:
+
+When an IP exceeds the failure threshold within the time window, an email is sent to the configured address.
+
+# Contributing
+
+Contributions are welcome! Fork the repo, create a branch, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
